@@ -1,0 +1,41 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    background-color: var(--white-color);
+    color: var(--black-main-color);
+}
+.list {
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+button{
+    cursor: pointer;
+}
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+.image{
+    display: block;
+}
+.visually-hidden {
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+    position: absolute;
+}
