@@ -8,20 +8,20 @@
 ;
 }
 
-.header, .hero-section, .advantages-section, .work-section, .team-section, .clients-section {
+.header, .hero-section, .advantages-section, .work-section, .team-section, .clients-section, .footer {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
 
-.nav__list, .contact-list, .advantages-section__list, .work-section__list, .team-list, .social-list, .clients-list {
+.social-list, .nav__list, .contact-list, .advantages-section__list, .work-section__list, .team-list, .clients-list, .contacts__list, .footer-social__list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.hero-section__button, .footer-form-button, .modal-button {
+.hero-section__button, .subscribe__button, .modal-button {
   display: block;
   min-width: 200px;
   height: 50px;
@@ -72,6 +72,75 @@ button {
   position: absolute;
 }
 
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.social-list__item {
+  width: 44px;
+  height: 44px;
+}
+
+.social-list__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  color: #AFB1B8;
+  transition: color var(--time) var(--cube), background-color var(--time) var(--cube);
+}
+
+.social-list__link:hover,
+.social-list__link:focus {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+
+.social-list__icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.social-list__link--white {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--white-color);
+  transition: color var(--time) var(--cube), background-color var(--time) var(--cube);
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: #000;
+  transition: color var(--time) var(--cube);
+}
+
+.logo:hover,
+.logo:focus {
+  color: var(--accent-color);
+}
+
+.logo--blue {
+  color: var(--accent-color);
+}
+
+.logo--dark {
+  color: #ffffff;
+}
+
 /* header */
 .header {
   padding-top: 24px;
@@ -84,26 +153,6 @@ button {
 .nav {
   display: flex;
   align-items: center;
-}
-
-.nav__logo {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  color: #000;
-  transition: color var(--time) var(--cube);
-}
-
-.nav__logo:hover,
-.nav__logo:focus {
-  color: var(--accent-color);
-}
-
-.nav__logo--blue {
-  color: var(--accent-color);
 }
 
 .nav__list {
@@ -391,45 +440,6 @@ button {
   color: var(--black-important-color);
 }
 
-.social-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 16px;
-}
-
-.social-list__item {
-  width: 44px;
-  height: 44px;
-}
-
-.social-list__item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.social-list__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  color: #AFB1B8;
-  transition: color var(--time) var(--cube), background-color var(--time) var(--cube);
-}
-
-.social-list__link:hover,
-.social-list__link:focus {
-  color: #ffffff;
-  background-color: var(--accent-color);
-}
-
-.social-list__icon {
-  width: 20px;
-  height: 20px;
-  fill: currentColor;
-}
-
 /* clients-section */
 .clients-section {
   padding: 94px 0;
@@ -487,62 +497,48 @@ button {
 }
 
 /* footer */
-.footer > .container {
+.footer {
   display: flex;
   align-items: baseline;
-}
-
-.footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
 }
 
-.footer .logo {
-  letter-spacing: 0.03em;
-  color: var(--white-color);
-  transition: color var(--time) var(--cube);
-}
-
-.footer .logo:focus,
-.footer .logo:hover {
-  color: var(--accent-color);
-}
-
-.location,
-.footer-contacts {
+.contacts__location,
+.contacts__link {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
-.location {
+.contacts__location {
   margin-top: 20px;
   margin-bottom: 9px;
   color: var(--white-color);
 }
 
-.footer-contacts {
+.contacts__link {
   text-decoration: none;
   color: RGBA(255, 255, 255, 0.6);
   transition: color var(--time) var(--cube);
 }
 
-.footer-contacts:hover,
-.footer-contacts:focus {
+.contacts__link:hover,
+.contacts__link:focus {
   color: var(--accent-color);
 }
 
-.footer .item:not(:last-child) {
+.contacts__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.footer-links {
+.footer-social {
   margin-left: 70px;
 }
 
-.footer-link-text {
+.footer-social__text {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -552,23 +548,11 @@ button {
   color: var(--white-color);
 }
 
-.social-link.down-page {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: var(--white-color);
-  transition: color var(--time) var(--cube), background-color var(--time) var(--cube);
-}
-
-.social-link.down-page:hover,
-.social-link.down-page:focus {
-  color: var(--white-color);
-  background-color: var(--accent-color);
-}
-
-.footer-subscribe {
+.subscribe {
   margin-left: 93px;
 }
 
-.footer-lable span {
+.subscribe__text {
   display: block;
   margin-bottom: 20px;
   margin-right: 12px;
@@ -580,7 +564,7 @@ button {
   color: var(--white-color);
 }
 
-.footer-input {
+.subscribe__input {
   width: 358px;
   height: 50px;
   margin-right: 12px;
@@ -597,27 +581,27 @@ button {
   border-radius: 4px;
 }
 
-.footer-input:focus {
+.subscribe__input:focus {
   border-color: var(--accent-color);
 }
 
-.button-thumb {
+.subscribe__button-thumb {
   position: relative;
   display: inline;
 }
 
-.footer-form-button {
+.subscribe__button {
   padding: 10px 29px;
   padding-right: 62px;
 }
 
-.footer-form-button:focus,
-.footer-form-button:hover {
+.subscribe__button:focus,
+.subscribe__button:hover {
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.footer-form-icon {
+.subscribe__icon {
   position: absolute;
   right: 28px;
   top: 50%;

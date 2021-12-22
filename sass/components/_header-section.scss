@@ -11,23 +11,7 @@
     display: flex;
     align-items: center;
 }
-.nav__logo {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-    color: #000;
-    transition: color var(--time) var(--cube);
-}
-.nav__logo:hover,
-.nav__logo:focus {
-    color: var(--accent-color);
-}
-.nav__logo--blue {
-    color: var(--accent-color);
-}
+
 .nav__list{
     @extend %list;
     display: flex;
