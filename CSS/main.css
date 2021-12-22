@@ -8,13 +8,6 @@
 ;
 }
 
-.header, .hero-section, .advantages-section, .work-section, .team-section, .clients-section, .footer {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
-
 .social-list, .nav__list, .contact-list, .advantages-section__list, .work-section__list, .team-list, .clients-list, .contacts__list, .footer-social__list {
   list-style: none;
   margin: 0;
@@ -53,6 +46,13 @@ h1, h2, h3, h4, h5, h6, p {
 
 button {
   cursor: pointer;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 .image {
@@ -145,9 +145,12 @@ button {
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
+  border-bottom: 1px solid #ECECEC;
+}
+
+.header__container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ECECEC;
 }
 
 .nav {
@@ -498,11 +501,14 @@ button {
 
 /* footer */
 .footer {
-  display: flex;
-  align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
 }
 
 .contacts__location,
@@ -591,6 +597,7 @@ button {
 }
 
 .subscribe__button {
+  display: inline-block;
   padding: 10px 29px;
   padding-right: 62px;
 }

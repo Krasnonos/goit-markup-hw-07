@@ -1,6 +1,5 @@
 /* hero-section */
 .hero-section {
-    @extend %container;
     padding-bottom: 200px;
     padding-top:200px;
     background-color: #2f303a;
@@ -9,6 +8,7 @@
     background-position: center;
     background-size: cover;
 }
+
 .hero-section__text {
     font-weight: 900;
     font-size: 44px;

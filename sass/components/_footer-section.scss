@@ -1,12 +1,13 @@
 /* footer */
 
 .footer {
-    @extend %container;
-    display: flex;
-    align-items: baseline;
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #2f303a;
+}
+.footer__container{
+    display: flex;
+    align-items: baseline;
 }
 .contacts__list{
     @extend %list;
@@ -90,6 +91,7 @@
 }
 .subscribe__button{
     @extend %button;
+    display: inline-block;
     padding: 10px 29px;
     padding-right: 62px;
 }
