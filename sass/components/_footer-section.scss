@@ -101,17 +101,9 @@
     display: inline;
 }
 .footer-form-button{
+    @extend %button;
     padding: 10px 29px;
     padding-right: 62px;
-    background-color: var(--accent-color);
-    border: none;
-    border-radius: 4px;
-    transition: box-shadow var(--time) var(--cube), background-color var(--time) var(--cube);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
-    color: #FFFFFF;
 }
 .footer-form-button:focus,
 .footer-form-button:hover{
