@@ -5,25 +5,15 @@ body {
     background-color: var(--white-color);
     color: var(--black-main-color);
 }
-.list {
-    list-style: none;
-}
+
 h1,h2,h3,h4,h5,h6,p{
     margin: 0;
 }
-ul{
-    margin: 0;
-    padding: 0;
-}
+
 button{
     cursor: pointer;
 }
-.container{
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-}
+
 .image{
     display: block;
 }
