@@ -3,10 +3,11 @@
     padding-top: 24px;
     padding-bottom: 25px;
     border-bottom: 1px solid #ECECEC;
-    &__container{
-        display: flex;
-        align-items: center;
-    }
+}
+
+.header__container{
+    display: flex;
+    align-items: center;
 }
 
 .nav{
@@ -96,7 +97,7 @@
     transition: color $time $cube;
     &:hover,
     &:focus {
-    color: $accent-color;
+        color: $accent-color;
     }
 }
 
