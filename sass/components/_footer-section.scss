@@ -5,13 +5,16 @@
     padding-bottom: 60px;
     background-color: #2f303a;
 }
+
 .footer__container{
     display: flex;
     align-items: baseline;
 }
+
 .contacts__list{
     @extend %list;
 }
+
 .contacts__location,
 .contacts__link {
     font-style: normal;
@@ -19,91 +22,39 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
+
 .contacts__location {
     margin-top: 20px;
     margin-bottom: 9px;
     color: $white-color;
 }
+
 .contacts__link {
     text-decoration: none;
     color: RGBA(255, 255, 255, 0.6);
     transition: color $time $cube;
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
 }
-.contacts__link:hover,
-.contacts__link:focus {
-    color: $accent-color;
-}
+
 .contacts__item:not(:last-child){
     margin-bottom: 9px;
 }
+
 .footer-social{
     margin-left: 70px;
-}
-.footer-social__text{
-    margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $white-color;
-}
-.footer-social__list{
-    @extend %list;
-}
-
-.subscribe{
-    margin-left: 93px;
-}
-.subscribe__text{
-    display: block;
-    margin-bottom: 20px;
-    margin-right: 12px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $white-color;
-}
-.subscribe__input{
-    width: 358px;
-    height: 50px;
-    margin-right: 12px;
-    padding: 15px 16px;
-    outline: none;
-    transition: border-color $time $cube;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-    background-color: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-}
-.subscribe__input:focus{
-    border-color: $accent-color;
-}
-.subscribe__button-thumb{
-    position: relative;
-    display: inline;
-}
-.subscribe__button{
-    @extend %button;
-    display: inline-block;
-    padding: 10px 29px;
-    padding-right: 62px;
-}
-.subscribe__button:focus,
-.subscribe__button:hover{
-    background-color: #188ce8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-.subscribe__icon{
-    position: absolute;
-    right: 28px;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-left: 10px;
+    &__text{
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $white-color;
+    }
+    &__list{
+        @extend %list;
+    }
 }

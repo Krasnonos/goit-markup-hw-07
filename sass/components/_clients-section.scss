@@ -3,6 +3,7 @@
     padding: 94px 0;
     background-color: #FFFFFF;
 }
+
 .clients-section__title{
     margin-bottom: 50px;
 font-weight: 700;
@@ -12,19 +13,22 @@ text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
 }
+
 .clients-list{
     @extend %list;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .clients-list__item{
     width: 170px;
     height: 92px;
+    & + &{
+        margin-left: 30px;
+    }
 }
-.clients-list__item + .clients-list__item{
-    margin-left: 30px;
-}
+
 .clients-list__link{
     width: 100%;
     height: 100%;
@@ -36,14 +40,15 @@ color: #212121;
     border-radius: 4px;
     color: #AFB1B8;
     transition: color $time $cube, border-color $time $cube;
+    &:hover,
+    &:focus{
+        color: $accent-color;
+        border-color: #188ce8;
+    }
 }
+
 .clients-list__icon{
     width: 106px;
     height: 60px;
     fill: currentColor;
-}
-.clients-list__link:hover,
-.clients-list__link:focus{
-    color: $accent-color;
-    border-color: #188ce8;
 }

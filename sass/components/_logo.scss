@@ -7,11 +7,12 @@
     text-decoration: none;
     color: #000;
     transition: color $time $cube;
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
 }
-.logo:hover,
-.logo:focus {
-    color: $accent-color;
-}
+
 .logo--blue {
     color: $accent-color;
 }
