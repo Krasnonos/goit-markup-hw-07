@@ -9,7 +9,7 @@
     font-size: 36px;
     letter-spacing: 0.03em;
     text-align: center;
-    color: var(--black-important-color);
+    color: $black-important-color;
 }
 .work-section__list{
     @extend %list;
@@ -40,7 +40,7 @@
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--white-color);
+    color: $white-color;
     background-color: rgba(47, 48, 58, 0.8);
 }
 

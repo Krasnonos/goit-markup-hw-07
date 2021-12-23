@@ -17,7 +17,7 @@
     text-align: center;
     letter-spacing: 0.06em;
     font-weight: 700;
-    color: var(--white-color);
-    background-color: var(--accent-color);
-    transition: background-color var(--time) var(--cube), box-shadow var(--time) var(--cube);
+    color: $white-color;
+    background-color: $accent-color;
+    transition: background-color $time $cube, box-shadow $time $cube;
 }

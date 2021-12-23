@@ -16,7 +16,7 @@
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--white-color);
+    color: $white-color;
 }
 .hero-section__button {
     @extend %button;

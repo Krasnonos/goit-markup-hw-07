@@ -30,14 +30,14 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
-    color: var(--black-important-color);
+    color: $black-important-color;
     position: relative;
-    transition: color var(--time) var(--cube);
+    transition: color $time $cube;
 }
 
 .nav__link:hover,
 .nav__link:focus {
-    color: var(--accent-color);
+    color: $accent-color;
 }
 .nav__link::after{
     content: "";
@@ -47,15 +47,15 @@
     transform: scale(0);
     width: 100%;
     height: 4px;
-    background-color: var(--accent-color);
+    background-color: $accent-color;
     border-radius: 2px;
-    transition: transform var(--time) var(--cube);
+    transition: transform $time $cube;
 }
 .nav__link:hover::after{
     transform: scale(1);
 }
 .nav__link--current {
-    color: var(--accent-color);
+    color: $accent-color;
 }
 .nav__link--current::after{
     content: "";
@@ -65,7 +65,7 @@
     transform: scale(1);
     width: 100%;
     height: 4px;
-    background-color: var(--accent-color);
+    background-color: $accent-color;
     border-radius: 2px;
 }
 .contact-list{
@@ -87,12 +87,12 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
-    color: var(--black-main-color);
-    transition: color var(--time) var(--cube);
+    color: $black-main-color;
+    transition: color $time $cube;
 }
 .contact-list__link:hover,
 .contact-list__link:focus {
-    color: var(--accent-color);
+    color: $accent-color;
 }
 .contact-list__icon-envelope{
     width: 16px;

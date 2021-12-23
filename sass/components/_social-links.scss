@@ -20,12 +20,12 @@
     height: 100%;
     border-radius: 50%;
     color: #AFB1B8;
-    transition: color var(--time) var(--cube), background-color var(--time) var(--cube);
+    transition: color $time $cube, background-color $time $cube;
 }
 .social-list__link:hover,
 .social-list__link:focus{
     color: #ffffff;
-    background-color: var(--accent-color);
+    background-color: $accent-color;
 }
 .social-list__icon{
     width: 20px;
@@ -36,6 +36,6 @@
 
 .social-list__link--white{
     background-color:rgba(255, 255, 255, 0.1);
-    color: var(--white-color);
-    transition: color var(--time) var(--cube), background-color var(--time) var(--cube);
+    color: $white-color;
+    transition: color $time $cube, background-color $time $cube;
 }

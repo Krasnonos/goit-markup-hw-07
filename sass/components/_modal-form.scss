@@ -7,7 +7,7 @@
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
-    color: var(--black-main-color);
+    color: $black-main-color;
 }
 
 .form__label + .form__label{
@@ -24,18 +24,18 @@
     padding: 12px 42px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    transition: border-color var(--time) var(--cube);
+    transition: border-color $time $cube;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
-    color: var(--black-main-color);
+    color: $black-main-color;
     outline: none;
 }
 .form__input:focus{
-    border-color: var(--accent-color);
+    border-color: $accent-color;
 }
 .form__input:focus + .form__icon{
-    fill: var(--accent-color);
+    fill: $accent-color;
 }
 
 .form__icon{
@@ -44,7 +44,7 @@
     top: 0;
     top: 50%;
     transform: translateY(-50%);
-    transition: fill var(--time) var(--cube);
+    transition: fill $time $cube;
 }
 
 .form__input--fixed{
@@ -70,10 +70,10 @@
     border: 2px solid #212121;
     border-radius: 2px;
     margin-right: 8px;
-    transition: border-color var(--time) var(--cube), background-color var(--time) var(--cube);
+    transition: border-color $time $cube, background-color $time $cube;
 }
 .privacy__input:checked + .privacy__checkbox{
-    background-color: var(--accent-color);
+    background-color: $accent-color;
     border-color: transparent;
 }
 .privacy{
@@ -86,7 +86,7 @@
     color: #757575;
 }
 .privacy__link{
-    color: var(--accent-color);
+    color: $accent-color;
 }
 .form__button{
     @extend %button;

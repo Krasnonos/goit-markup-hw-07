@@ -22,16 +22,16 @@
 .contacts__location {
     margin-top: 20px;
     margin-bottom: 9px;
-    color: var(--white-color);
+    color: $white-color;
 }
 .contacts__link {
     text-decoration: none;
     color: RGBA(255, 255, 255, 0.6);
-    transition: color var(--time) var(--cube);
+    transition: color $time $cube;
 }
 .contacts__link:hover,
 .contacts__link:focus {
-    color: var(--accent-color);
+    color: $accent-color;
 }
 .contacts__item:not(:last-child){
     margin-bottom: 9px;
@@ -46,7 +46,7 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--white-color);
+    color: $white-color;
 }
 .footer-social__list{
     @extend %list;
@@ -64,7 +64,7 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--white-color);
+    color: $white-color;
 }
 .subscribe__input{
     width: 358px;
@@ -72,7 +72,7 @@
     margin-right: 12px;
     padding: 15px 16px;
     outline: none;
-    transition: border-color var(--time) var(--cube);
+    transition: border-color $time $cube;
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
@@ -83,7 +83,7 @@
     border-radius: 4px;
 }
 .subscribe__input:focus{
-    border-color: var(--accent-color);
+    border-color: $accent-color;
 }
 .subscribe__button-thumb{
     position: relative;

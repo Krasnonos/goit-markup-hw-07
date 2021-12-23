@@ -2,8 +2,8 @@ body {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
-    background-color: var(--white-color);
-    color: var(--black-main-color);
+    background-color: $white-color;
+    color: $black-main-color;
 }
 
 h1,h2,h3,h4,h5,h6,p{
