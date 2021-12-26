@@ -13,18 +13,19 @@
 .nav{
     display: flex;
     align-items: center;
-    &__list{
-        @extend %list;
-        display: flex;
-        margin-left: 93px;
-    }
-    &__item:not(:last-child){
-        margin-right: 50px;
-    }
 }
 
+.nav-list{
+    @extend %list;
+    display: flex;
+    margin-left: 93px;
+}
 
-.nav__link {
+.nav-list__item:not(:last-child){
+    margin-right: 50px;
+}
+
+.nav-list__link {
     padding-top: 10px;
     padding-bottom: 10px;
     font-weight: 500;
@@ -41,7 +42,7 @@
     }
 }
 
-.nav__link::after{
+.nav-list__link::after{
     content: "";
     position: absolute;
     left: 0;
@@ -54,11 +55,11 @@
     transition: transform $time $cube;
 }
 
-.nav__link:hover::after{
+.nav-list__link:hover::after{
     transform: scale(1);
 }
 
-.nav__link--current {
+.nav-list__link--current {
     color: $accent-color;
     &::after{
         content: "";

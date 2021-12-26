@@ -12,13 +12,13 @@
     color: $black-important-color;
 }
 
-.work-section__list{
+.work-list{
     @extend %list;
     display: flex;
     flex-wrap: wrap;
 }
 
-.work-section__item {
+.work-list__item {
     position: relative;
     margin-right: 30px;
     margin-bottom: 30px;
@@ -30,7 +30,7 @@
     }
 }
 
-.work-section__text{
+.work-list__text{
     position: absolute;
     bottom: 0;
     left: 0;
